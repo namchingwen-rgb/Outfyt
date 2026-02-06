@@ -1,14 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>Outfyt — AI Wardrobe Styling Assistant</title>
+  <meta name="description" content="Maximize your wardrobe with AI-powered styling. Get daily outfit suggestions, event styling, and wardrobe insights.">
+  <meta name="theme-color" content="#8B7355">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <header id="app-header">
+    <a href="#/home" class="header-brand">Outfyt</a>
+    <nav class="header-links">
+      <a href="#/mimic" class="header-link" title="Mimic a Look">Mimic</a>
+    </nav>
+  </header>
+
+  <main id="main-content"></main>
+
+  <nav id="bottom-nav" class="bottom-nav"></nav>
+
+  <div id="toast-container"></div>
+
+  <script type="module" src="/js/main.js"></script>
 </body>
 </html>
